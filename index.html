@@ -15,6 +15,8 @@
             background-size: cover;
             background-image: URL("./assets/images/bgimage.jpg");
             background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
         }
         a:link {
             color: yellow;
@@ -26,13 +28,22 @@
             background-color: transparent;
             text-decoration: none;
         }
+        @media screen and (max-width: 1000px) {
+            body {
+                background-image: url( "./assets/images/portraitbg.jpg" ) !important;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 100vh;
+                width: 100vw;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container" style="text-align: center;">
     <h1>Ali's Portfolio</h1>
     <h2>I am a Web Developer</h2>
-    <hr /></a></h3>
+    </a></h3>
     <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-12 space">
             <h3><a target="_blank" href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
@@ -55,9 +66,9 @@
             <img src="./assets/images/bookit.png" height="200">
         </div>
     </div>
-    <hr />
-    <a target="_blank" href="./public/about.html">about me</a>
-    <a target="_blank" href="./public/contact.html">Contact me</a>
+    <div class="shift">
+        <a target="_blank" href="./public/about.html">about me</a>
+        <a target="_blank" href="./public/contact.html">Contact me</a></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
